@@ -1,8 +1,10 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #0b1020; /* deep slate */
+  --foreground: #e6e9f2; /* soft light */
+  --accent: #7c3aed; /* violet */
+  --accent-2: #06b6d4; /* cyan */
 }
 
 @theme inline {
@@ -12,15 +14,18 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* Light theme variables applied when html:not(.dark) */
+html:not(.dark) {
+  --background: #ffffff;
+  --foreground: #0f172a;
+  --accent: #7c3aed;
+  --accent-2: #0ea5e9;
 }
 
 body {
-  background: var(--background);
+  background: radial-gradient(1200px 600px at 0% 0%, color-mix(in oklab, var(--accent) 8%, transparent), transparent),
+              radial-gradient(800px 400px at 100% 0%, color-mix(in oklab, var(--accent-2) 8%, transparent), transparent),
+              var(--background);
   color: var(--foreground);
   font-family: var(--font-geist-sans), ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica Neue, Arial, "Apple Color Emoji", "Segoe UI Emoji";
 }
@@ -28,4 +33,25 @@ body {
 /* Containers */
 .container {
   width: 100%;
+}
+
+/* Glass cards */
+.glass {
+  background: linear-gradient(180deg, color-mix(in oklab, var(--background) 65%, transparent), color-mix(in oklab, var(--background) 80%, transparent));
+  backdrop-filter: blur(10px) saturate(140%);
+  -webkit-backdrop-filter: blur(10px) saturate(140%);
+  border: 1px solid color-mix(in oklab, var(--foreground) 12%, transparent);
+  border-radius: 16px;
+  box-shadow: 0 10px 30px color-mix(in oklab, var(--foreground) 10%, transparent);
+}
+
+/* Accent ring/button styles reminiscent of Aceternity aesthetics */
+.btn-accent {
+  background: linear-gradient(90deg, color-mix(in oklab, var(--accent) 85%, transparent), color-mix(in oklab, var(--accent-2) 85%, transparent));
+  color: white;
+}
+.ring-accent {
+  box-shadow: 0 0 0 1px color-mix(in oklab, var(--accent) 40%, transparent),
+              0 0 0 8px color-mix(in oklab, var(--accent) 10%, transparent);
+  border-radius: 9999px;
 }

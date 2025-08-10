@@ -18,8 +18,9 @@
     "/curriculum": "Tracks-focused overview (specializations only)",
     "/curriculum/adts": "List of ADTs from CMS",
     "/curriculum/adts/[slug]": "ADT detail page with overview, exercises (difficulty badges), related links, and login-gated notebook embed",
-    "/curriculum/techniques": "List of techniques from CMS",
-    "/curriculum/techniques/[slug]": "Technique detail with overview, exercises (difficulty badges), related links",
+    "/curriculum/techniques": "List of techniques & algorithms from CMS with intro about optimizing navigation/querying/computation",
+    "/curriculum/techniques/[slug]": "Technique/algorithm detail with overview, exercises (difficulty badges), related links",
+    "/curriculum/cases/[slug]": "Case study detail page with JupyterLite embed and related references",
     "/curriculum/tracks": "List of specialization tracks",
     "/curriculum/tracks/[slug]": "Track detail page mapping to ADTs, techniques, and case studies",
     "/topics/[slug]": "Legacy topic route (kept for now)",
@@ -74,5 +75,12 @@
     "static": "Configured output: export; images unoptimized for static hosting",
     "config": "JupyterLite base URL configurable via env",
     "cms": "File-based JSON CMS under src/content/cms for ADTs, Techniques, and Tracks with related links and exercises; registry.ts and tracks.ts load at build-time. ADTs grouped on index page with badges. Techniques index explains optimization of navigation/querying/computation."
+  },
+  "process": {
+    "promptHistory": {
+      "file": "prompt-history.json",
+      "checkOnBoot": true,
+      "policy": "Before doing any work each session, append the user's exact prompt with an ISO timestamp to prompt-history.json and consult the last entry."
+    }
   }
 }
