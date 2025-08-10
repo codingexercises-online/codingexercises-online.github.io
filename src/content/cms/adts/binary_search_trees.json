@@ -1,0 +1,11 @@
+{
+  "slug": "binary_search_trees",
+  "title": "Binary Search Trees (BSTs)",
+  "overview": "Ordered binary tree where left < node < right enabling logarithmic operations when balanced.",
+  "languages": {},
+  "relatedTechniques": ["binary_search", "recursion"],
+  "relatedAdts": ["binary_trees"],
+  "exercises": [
+    { "title": "Insert/search/delete in BST", "uses": {"adts": 1, "techniques": 1, "caseStudies": 1} }
+  ]
+}

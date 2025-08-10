@@ -1,0 +1,11 @@
+{
+  "slug": "fibonacci_heaps",
+  "title": "Fibonacci Heaps",
+  "overview": "Lazy meldable heap with excellent amortized decrease-key and merge.",
+  "languages": {},
+  "relatedTechniques": ["amortized", "greedy"],
+  "relatedAdts": ["heaps"],
+  "exercises": [
+    { "title": "Implement Fib heap operations (merge/decrease-key)", "uses": {"adts": 1, "techniques": 2, "caseStudies": 2} }
+  ]
+}

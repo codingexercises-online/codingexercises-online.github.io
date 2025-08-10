@@ -1,0 +1,11 @@
+{
+  "slug": "ternary_search_trees",
+  "title": "Ternary Search Trees",
+  "overview": "Space-efficient string symbol tree storing characters with three-way branching.",
+  "languages": {},
+  "relatedTechniques": ["precomputation"],
+  "relatedAdts": ["trees"],
+  "exercises": [
+    { "title": "TST insert/search/delete", "uses": {"adts": 1, "techniques": 1, "caseStudies": 1} }
+  ]
+}

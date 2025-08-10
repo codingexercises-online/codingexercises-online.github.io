@@ -1,0 +1,11 @@
+{
+  "slug": "disjoint_set_union",
+  "title": "Disjoint Set Union (Union-Find)",
+  "overview": "Maintain partition of elements with union/find using path compression and union by rank.",
+  "languages": {},
+  "relatedTechniques": ["precomputation"],
+  "relatedAdts": [],
+  "exercises": [
+    { "title": "Implement DSU with path compression", "uses": {"adts": 1, "techniques": 1, "caseStudies": 1} }
+  ]
+}

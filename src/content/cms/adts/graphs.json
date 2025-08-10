@@ -1,0 +1,11 @@
+{
+  "slug": "graphs",
+  "title": "Graphs",
+  "overview": "General ADT of vertices and edges; directed/undirected, weighted, acyclic, bipartite variants.",
+  "languages": {},
+  "relatedTechniques": ["bfs", "dfs", "dijkstra", "topological_sort"],
+  "relatedAdts": [],
+  "exercises": [
+    { "title": "Representations (adjacency list/matrix)", "uses": {"adts": 1, "techniques": 0, "caseStudies": 1} }
+  ]
+}

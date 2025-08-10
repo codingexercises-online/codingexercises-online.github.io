@@ -1,0 +1,11 @@
+{
+  "slug": "binary_trees",
+  "title": "Binary Trees",
+  "overview": "Each node up to two children; base for many hierarchical algorithms.",
+  "languages": {},
+  "relatedTechniques": ["dfs", "bfs", "recursion"],
+  "relatedAdts": ["trees"],
+  "exercises": [
+    { "title": "Implement traversals (pre/in/post/level)", "uses": {"adts": 1, "techniques": 1, "caseStudies": 1} }
+  ]
+}

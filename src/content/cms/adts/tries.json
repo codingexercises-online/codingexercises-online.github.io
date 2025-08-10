@@ -1,0 +1,11 @@
+{
+  "slug": "tries",
+  "title": "Tries (Prefix Trees)",
+  "overview": "Tree for strings keyed by prefixes; efficient prefix queries and autocomplete.",
+  "languages": {},
+  "relatedTechniques": ["precomputation", "dfs"],
+  "relatedAdts": ["trees"],
+  "exercises": [
+    { "title": "Implement a Trie (insert/search/startsWith)", "uses": {"adts": 1, "techniques": 1, "caseStudies": 1} }
+  ]
+}

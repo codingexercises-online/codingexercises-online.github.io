@@ -1,0 +1,11 @@
+{
+  "slug": "avl_trees",
+  "title": "AVL Trees",
+  "overview": "Self-balancing BST maintaining strict height balance via rotations.",
+  "languages": {},
+  "relatedTechniques": ["recursion"],
+  "relatedAdts": ["binary_search_trees"],
+  "exercises": [
+    { "title": "AVL insert/delete with rotations", "uses": {"adts": 1, "techniques": 1, "caseStudies": 2} }
+  ]
+}

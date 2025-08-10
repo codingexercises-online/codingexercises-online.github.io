@@ -1,0 +1,11 @@
+{
+  "slug": "splay_trees",
+  "title": "Splay Trees",
+  "overview": "Self-adjusting BST moving accessed nodes near the root with splaying rotations.",
+  "languages": {},
+  "relatedTechniques": ["amortized"],
+  "relatedAdts": ["binary_search_trees"],
+  "exercises": [
+    { "title": "Implement splay and basic operations", "uses": {"adts": 1, "techniques": 1, "caseStudies": 2} }
+  ]
+}

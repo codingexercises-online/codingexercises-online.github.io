@@ -1,0 +1,11 @@
+{
+  "slug": "b_trees",
+  "title": "B-Trees",
+  "overview": "Multi-way self-balancing trees optimized for disk/page access.",
+  "languages": {},
+  "relatedTechniques": ["precomputation"],
+  "relatedAdts": ["trees"],
+  "exercises": [
+    { "title": "B-Tree insert/split and search", "uses": {"adts": 1, "techniques": 1, "caseStudies": 2} }
+  ]
+}

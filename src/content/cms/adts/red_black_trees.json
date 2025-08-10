@@ -1,0 +1,11 @@
+{
+  "slug": "red_black_trees",
+  "title": "Red-Black Trees",
+  "overview": "Self-balancing BST with color properties ensuring O(log n) operations.",
+  "languages": {},
+  "relatedTechniques": ["recursion"],
+  "relatedAdts": ["binary_search_trees"],
+  "exercises": [
+    { "title": "RB insert/delete with fix-ups", "uses": {"adts": 1, "techniques": 1, "caseStudies": 2} }
+  ]
+}
