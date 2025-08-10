@@ -1,0 +1,11 @@
+{
+  "slug": "sliding_window",
+  "title": "Sliding Window",
+  "overview": "Maintain a moving subset over linear data to compute answers in O(n) time.",
+  "relatedAdts": ["static_arrays"],
+  "relatedTechniques": ["two_pointer", "precomputation"],
+  "exercises": [
+    { "title": "Longest substring with K distinct", "uses": {"adts": 1, "techniques": 2, "caseStudies": 1} },
+    { "title": "Min window substring", "uses": {"adts": 1, "techniques": 2, "caseStudies": 1} }
+  ]
+}

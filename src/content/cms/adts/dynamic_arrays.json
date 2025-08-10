@@ -1,0 +1,14 @@
+{
+  "slug": "dynamic_arrays",
+  "title": "Dynamic Arrays",
+  "overview": "Resizable arrays that amortize append via capacity growth; preserve O(1) average push and O(1) random access.",
+  "languages": {
+    "c": "dsa/arrays_and_strings/dynamic_c.ipynb"
+  },
+  "relatedTechniques": ["precomputation", "two_pointer"],
+  "relatedAdts": ["static_arrays", "stacks"],
+  "exercises": [
+    { "title": "Implement a dynamic array (push/pop/resize)", "uses": {"adts": 1, "techniques": 0, "caseStudies": 1} },
+    { "title": "Insert/erase with shifts", "uses": {"adts": 1, "techniques": 1, "caseStudies": 1} }
+  ]
+}

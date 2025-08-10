@@ -1,0 +1,11 @@
+{
+  "slug": "trees",
+  "title": "Trees",
+  "overview": "Hierarchical ADT modeling parent-child relationships; enables DFS/BFS traversals.",
+  "languages": {},
+  "relatedTechniques": ["dfs", "bfs", "recursion"],
+  "relatedAdts": ["heaps", "tries"],
+  "exercises": [
+    { "title": "Implement generic tree node and traversals", "uses": {"adts": 1, "techniques": 1, "caseStudies": 1} }
+  ]
+}

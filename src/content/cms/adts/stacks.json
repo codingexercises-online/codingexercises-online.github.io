@@ -1,0 +1,15 @@
+{
+  "slug": "stacks",
+  "title": "Stacks",
+  "overview": "LIFO ADT supporting push/pop/peek; implement via arrays or linked lists.",
+  "languages": {
+    "c": "dsa/stacks/c.ipynb"
+  },
+  "relatedTechniques": ["recursion", "monotonic_stack", "backtracking"],
+  "relatedAdts": ["static_arrays", "linked_lists"],
+  "exercises": [
+    { "title": "Build a stack with array backing", "uses": {"adts": 1, "techniques": 0, "caseStudies": 1} },
+    { "title": "Valid parentheses (stack)", "uses": {"adts": 1, "techniques": 1, "caseStudies": 1} },
+    { "title": "Daily temperatures (monotonic)", "uses": {"adts": 1, "techniques": 2, "caseStudies": 1} }
+  ]
+}

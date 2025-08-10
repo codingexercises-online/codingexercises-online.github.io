@@ -1,0 +1,8 @@
+{
+  "slug": "blockchain",
+  "title": "Blockchain & Cryptography",
+  "summary": "Core DS&A behind mempools, consensus, and indexing.",
+  "adts": ["hashtables", "heaps", "static_arrays"],
+  "techniques": ["precomputation", "greedy", "recursion"],
+  "caseStudies": ["consistent_hashing", "merkle_tree_construction", "mempool_priority_queue", "utxo_indexing"]
+}

@@ -1,0 +1,14 @@
+{
+  "slug": "hashtables",
+  "title": "Hash Tables",
+  "overview": "Key indexing via hashing into arrays; handle collisions with chaining or open addressing.",
+  "languages": {
+    "c": "dsa/hashmaps/c.ipynb"
+  },
+  "relatedTechniques": ["precomputation"],
+  "relatedAdts": ["static_arrays", "linked_lists"],
+  "exercises": [
+    { "title": "Implement hashmap with chaining", "uses": {"adts": 2, "techniques": 1, "caseStudies": 2} },
+    { "title": "Open addressing (linear probing)", "uses": {"adts": 1, "techniques": 1, "caseStudies": 1} }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "slug": "heaps",
+  "title": "Binary Heaps",
+  "overview": "Array-backed priority queue satisfying the heap property; fast peek and extract operations.",
+  "languages": {
+    "c": "dsa/heaps/c.ipynb"
+  },
+  "relatedTechniques": ["precomputation", "greedy"],
+  "relatedAdts": ["static_arrays"],
+  "exercises": [
+    { "title": "Implement min-heap (push/pop/heapify)", "uses": {"adts": 1, "techniques": 1, "caseStudies": 1} },
+    { "title": "K largest elements (heap)", "uses": {"adts": 1, "techniques": 2, "caseStudies": 1} }
+  ]
+}

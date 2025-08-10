@@ -19,9 +19,8 @@ export function Navbar() {
             <Link href="/curriculum" className="hover:underline">
               Curriculum
             </Link>
-            <Link href="/curriculum/techniques/two_pointer" className="hover:underline">
-              Techniques
-            </Link>
+            <Link href="/curriculum/adts" className="hover:underline">ADTs</Link>
+            <Link href="/curriculum/techniques" className="hover:underline">Techniques</Link>
           </nav>
         </div>
         <div className="flex items-center gap-3">

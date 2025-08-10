@@ -1,0 +1,10 @@
+{
+  "slug": "precomputation",
+  "title": "Precomputation",
+  "overview": "Build auxiliary structures up front to enable faster queries later (hashes, prefix sums, sorting).",
+  "relatedAdts": ["hashtables", "static_arrays"],
+  "relatedTechniques": ["memoization", "two_pointer"],
+  "exercises": [
+    { "title": "Prefix sums for range queries", "uses": {"adts": 1, "techniques": 1, "caseStudies": 1} }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "slug": "recursion",
+  "title": "Recursion",
+  "overview": "Solve problems by reducing them to subproblems; leverage call stack for state.",
+  "relatedAdts": ["trees", "linked_lists"],
+  "relatedTechniques": ["divide_and_conquer", "memoization"],
+  "exercises": [
+    { "title": "Recursive binary search", "uses": {"adts": 1, "techniques": 1, "caseStudies": 1} },
+    { "title": "DFS pre/in/postorder", "uses": {"adts": 1, "techniques": 1, "caseStudies": 1} }
+  ]
+}

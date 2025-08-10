@@ -1,0 +1,14 @@
+{
+  "slug": "queues",
+  "title": "Queues",
+  "overview": "FIFO ADT supporting enqueue/dequeue; implement with circular arrays or linked lists.",
+  "languages": {
+    "c": "dsa/queues/c.ipynb"
+  },
+  "relatedTechniques": ["bfs", "sliding_window"],
+  "relatedAdts": ["linked_lists", "dequeues"],
+  "exercises": [
+    { "title": "Circular buffer queue", "uses": {"adts": 1, "techniques": 0, "caseStudies": 1} },
+    { "title": "Queue via two stacks", "uses": {"adts": 2, "techniques": 1, "caseStudies": 2} }
+  ]
+}

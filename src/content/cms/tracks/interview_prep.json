@@ -1,0 +1,11 @@
+{
+  "slug": "interview_prep",
+  "title": "General Coding Interviews",
+  "summary": "A focused path through core ADTs and techniques for technical interviews.",
+  "adts": ["static_arrays", "dynamic_arrays", "linked_lists", "stacks", "queues", "hashtables", "heaps", "trees"],
+  "techniques": ["two_pointer", "sliding_window", "binary_search", "recursion", "precomputation"],
+  "caseStudies": [
+    "array_rotations", "two_sum_sorted", "three_sum", "valid_parentheses", "min_window_substring",
+    "lower_upper_bound", "heap_top_k", "merge_k_sorted_lists", "bfs_shortest_path", "dfs_traversals"
+  ]
+}

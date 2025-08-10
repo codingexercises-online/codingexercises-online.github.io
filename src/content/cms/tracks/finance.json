@@ -1,0 +1,8 @@
+{
+  "slug": "finance",
+  "title": "Finance & Quant",
+  "summary": "Data structures and techniques for pricing, risk, and backtesting.",
+  "adts": ["static_arrays", "dynamic_arrays", "hashtables", "heaps"],
+  "techniques": ["precomputation", "sliding_window", "binary_search"],
+  "caseStudies": ["max_subarray_kadane", "order_book_heap", "rolling_volatility", "event_bucketing"]
+}

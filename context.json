@@ -15,8 +15,14 @@
     "/foundations": "Public foundations overview page",
     "/foundations/data-structures": "Public article: storage models (indexes/pointers) + ADTs",
     "/foundations/algorithmic-techniques": "Public article: fundamental ops, precomputation, iterative refinement",
-    "/curriculum": "Public overview list of DSA topics",
-    "/topics/[slug]": "Topic detail page; requires login; embeds JupyterLite notebook with language switcher",
+    "/curriculum": "Public overview: ADTs grid and Tracks",
+    "/curriculum/adts": "List of ADTs from CMS",
+    "/curriculum/adts/[slug]": "ADT detail page with overview, exercises (difficulty badges), related links, and login-gated notebook embed",
+    "/curriculum/techniques": "List of techniques from CMS",
+    "/curriculum/techniques/[slug]": "Technique detail with overview, exercises (difficulty badges), related links",
+    "/curriculum/tracks": "List of specialization tracks",
+    "/curriculum/tracks/[slug]": "Track detail page mapping to ADTs, techniques, and case studies",
+    "/topics/[slug]": "Legacy topic route (kept for now)",
     "/login": "Sign-in form; stubbed auth; redirects back"
   },
   "auth": {
@@ -63,6 +69,6 @@
     "protection": "ADT pages and prior topic pages are wrapped with RequireAuth for notebook embedding",
     "static": "Configured output: export; images unoptimized for static hosting",
     "config": "JupyterLite base URL configurable via env",
-    "cms": "File-based JSON CMS under src/content/cms for ADTs and Techniques with related links and exercises; registry.ts loads and exposes data."
+    "cms": "File-based JSON CMS under src/content/cms for ADTs, Techniques, and Tracks with related links and exercises; registry.ts and tracks.ts load at build-time."
   }
 }
