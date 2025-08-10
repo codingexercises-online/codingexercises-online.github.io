@@ -23,6 +23,7 @@ export default function TopicClient({ adt }: { adt: AdtEntry }) {
           <LanguageTabs initial={lang} onChange={(l) => setLang(l)} />
         </div>
 
+        <div id="notebook" />
         {notebookPath ? (
           <JupyterLiteEmbed
             baseUrl={siteConfig.jupyterLiteBaseUrl}
@@ -30,7 +31,7 @@ export default function TopicClient({ adt }: { adt: AdtEntry }) {
             language={lang}
           />
         ) : (
-          <div className="text-sm text-foreground/60">No notebook linked for this language yet.</div>
+          <div className="text-sm text-foreground/60">Notebook coming soon. This will launch the JupyterLite exercise in-browser.</div>
         )}
 
         <section>

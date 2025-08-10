@@ -7,7 +7,7 @@ export default function TechniquesListPage() {
   const techniques = loadAllTechniques();
   return (
     <div>
-      <h1 className="text-3xl font-bold tracking-tight mb-6">Algorithmic Techniques</h1>
+      <h1 className="text-3xl font-bold tracking-tight mb-6">Techniques & Algorithms</h1>
       <div className="rounded-xl border border-black/10 dark:border-white/10 p-5 mb-6 text-sm text-foreground/80">
         We focus on optimization strategies for the three fundamental operations: <strong>navigation</strong>, <strong>querying</strong>, and <strong>computation</strong>. Techniques such as precomputation and iterative refinement (looping or recursion) shape how we efficiently perform these operations across ADTs.
       </div>
