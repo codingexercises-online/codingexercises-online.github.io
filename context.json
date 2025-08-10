@@ -33,21 +33,21 @@
     "switcher": "src/components/LanguageTabs.tsx"
   },
   "topics": [
-    "arrays-and-strings",
-    "linked-lists",
-    "stacks-and-queues",
-    "trees-and-bsts",
-    "heaps-and-priority-queues",
-    "graphs",
-    "sorting-and-searching",
-    "dynamic-programming",
-    "greedy"
+    "static_arrays",
+    "linked_lists",
+    "stacks",
+    "queues",
+    "hashmaps",
+    "heaps",
+    "trees",
+    "graphs"
   ],
   "files": {
     "layout": "src/app/layout.tsx",
     "home": "src/app/page.tsx",
     "curriculum": "src/app/curriculum/page.tsx",
-    "topic": "src/app/topics/[slug]/page.tsx",
+    "curriculumAdt": "src/app/curriculum/adts/[slug]/page.tsx",
+    "curriculumTechnique": "src/app/curriculum/techniques/[slug]/page.tsx",
     "login": "src/app/login/page.tsx",
     "authLib": "src/lib/auth.tsx",
     "navbar": "src/components/Navbar.tsx",
@@ -60,8 +60,9 @@
   },
   "architecture": {
     "app": "App Router wraps pages with AuthProvider and site chrome (Navbar/Footer)",
-    "protection": "Topic pages are wrapped with RequireAuth for login gating",
+    "protection": "ADT pages and prior topic pages are wrapped with RequireAuth for notebook embedding",
     "static": "Configured output: export; images unoptimized for static hosting",
-    "config": "JupyterLite base URL configurable via env"
+    "config": "JupyterLite base URL configurable via env",
+    "cms": "File-based JSON CMS under src/content/cms for ADTs and Techniques with related links and exercises; registry.ts loads and exposes data."
   }
 }

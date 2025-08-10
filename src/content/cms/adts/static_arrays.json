@@ -1,0 +1,25 @@
+{
+  "slug": "static_arrays",
+  "title": "Static Arrays",
+  "overview": "Index-based storage with fixed-size contiguous memory enabling O(1) random access; costly inserts/deletes due to copies.",
+  "languages": {
+    "c": "dsa/arrays_and_strings/c.ipynb",
+    "python": "dsa/arrays_and_strings/python.ipynb",
+    "typescript": "dsa/arrays_and_strings/typescript.ipynb",
+    "dart": "dsa/arrays_and_strings/dart.ipynb"
+  },
+  "relatedTechniques": ["two_pointer", "binary_search", "sliding_window", "precomputation"],
+  "relatedAdts": ["stacks"],
+  "exercises": [
+    { "title": "Implement a fixed-size array API (get/set/length)", "uses": {"adts": 1, "techniques": 0, "caseStudies": 1} },
+    { "title": "Reverse an array in place", "uses": {"adts": 1, "techniques": 1, "caseStudies": 1} },
+    { "title": "Rotate array by k positions", "uses": {"adts": 1, "techniques": 1, "caseStudies": 1} },
+    { "title": "Two-sum in sorted array", "uses": {"adts": 1, "techniques": 1, "caseStudies": 1} },
+    { "title": "Binary search variants (first/last occurrence)", "uses": {"adts": 1, "techniques": 1, "caseStudies": 1} },
+    { "title": "Sliding window: longest substring with k distinct", "uses": {"adts": 1, "techniques": 2, "caseStudies": 1} },
+    { "title": "Prefix sums for range sum queries", "uses": {"adts": 1, "techniques": 1, "caseStudies": 1} },
+    { "title": "In-place array partitioning", "uses": {"adts": 1, "techniques": 1, "caseStudies": 1} },
+    { "title": "Dutch National Flag problem", "uses": {"adts": 1, "techniques": 2, "caseStudies": 1} },
+    { "title": "Find duplicate with constraints", "uses": {"adts": 1, "techniques": 2, "caseStudies": 1} }
+  ]
+}

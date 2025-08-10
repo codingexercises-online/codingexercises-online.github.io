@@ -35,12 +35,7 @@ export default function Home() {
       </div>
 
       <div className="flex gap-3 justify-center">
-        <Link
-          href="/curriculum"
-          className="rounded-md px-4 py-2 bg-foreground text-background font-medium hover:opacity-90"
-        >
-          Browse curriculum
-        </Link>
+        <Link href="/curriculum" className="rounded-md px-4 py-2 bg-foreground text-background font-medium hover:opacity-90">Browse curriculum</Link>
         <Link
           href="/foundations"
           className="rounded-md px-4 py-2 border border-black/10 dark:border-white/15 hover:bg-black/5 dark:hover:bg-white/10"

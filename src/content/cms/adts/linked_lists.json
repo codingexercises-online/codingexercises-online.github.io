@@ -1,0 +1,25 @@
+{
+  "slug": "linked_lists",
+  "title": "Singly Linked Lists",
+  "overview": "Pointer-based storage with nodes and next pointers; O(1) head/tail insert (with tail), O(n) random access.",
+  "languages": {
+    "c": "dsa/linked_lists/c.ipynb",
+    "python": "dsa/linked_lists/python.ipynb",
+    "typescript": "dsa/linked_lists/typescript.ipynb",
+    "dart": "dsa/linked_lists/dart.ipynb"
+  },
+  "relatedTechniques": ["fast_slow_pointers", "recursion", "two_pointer"],
+  "relatedAdts": ["stacks", "queues"],
+  "exercises": [
+    { "title": "Build a singly linked list (insert/delete/search)", "uses": {"adts": 1, "techniques": 0, "caseStudies": 1} },
+    { "title": "Reverse a linked list (iterative)", "uses": {"adts": 1, "techniques": 1, "caseStudies": 1} },
+    { "title": "Reverse a linked list (recursive)", "uses": {"adts": 1, "techniques": 1, "caseStudies": 1} },
+    { "title": "Detect cycle (Floyd)", "uses": {"adts": 1, "techniques": 1, "caseStudies": 1} },
+    { "title": "Find middle node (fast/slow)", "uses": {"adts": 1, "techniques": 1, "caseStudies": 1} },
+    { "title": "K-th from end", "uses": {"adts": 1, "techniques": 1, "caseStudies": 1} },
+    { "title": "Merge two sorted lists", "uses": {"adts": 1, "techniques": 1, "caseStudies": 2} },
+    { "title": "Add two numbers (lists)", "uses": {"adts": 1, "techniques": 1, "caseStudies": 2} },
+    { "title": "Reorder list", "uses": {"adts": 1, "techniques": 2, "caseStudies": 2} },
+    { "title": "Partition list", "uses": {"adts": 1, "techniques": 1, "caseStudies": 2} }
+  ]
+}

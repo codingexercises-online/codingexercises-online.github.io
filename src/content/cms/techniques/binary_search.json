@@ -1,0 +1,12 @@
+{
+  "slug": "binary_search",
+  "title": "Binary Search",
+  "overview": "Iterative refinement over an ordered domain using low/high bounds to locate a target in O(log n).",
+  "relatedAdts": ["static_arrays", "binary_search_trees"],
+  "relatedTechniques": ["two_pointer", "precomputation"],
+  "exercises": [
+    { "title": "Lower/upper bound variants", "uses": {"adts": 1, "techniques": 1, "caseStudies": 1} },
+    { "title": "Search in rotated array", "uses": {"adts": 1, "techniques": 1, "caseStudies": 1} },
+    { "title": "Peak element (bitonic)", "uses": {"adts": 1, "techniques": 1, "caseStudies": 1} }
+  ]
+}

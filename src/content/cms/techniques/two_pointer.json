@@ -1,0 +1,13 @@
+{
+  "slug": "two_pointer",
+  "title": "Two-Pointer Technique",
+  "overview": "Use two indices to traverse a linear structure from ends or with a moving window to achieve O(n) time and O(1) space.",
+  "relatedAdts": ["static_arrays", "dynamic_arrays"],
+  "relatedTechniques": ["sliding_window", "binary_search"],
+  "exercises": [
+    { "title": "Pair sum in sorted array", "uses": {"adts": 1, "techniques": 1, "caseStudies": 1} },
+    { "title": "Remove duplicates in-place", "uses": {"adts": 1, "techniques": 1, "caseStudies": 1} },
+    { "title": "Three sum (meet-in-the-middle)", "uses": {"adts": 1, "techniques": 2, "caseStudies": 1} },
+    { "title": "Container with most water", "uses": {"adts": 1, "techniques": 1, "caseStudies": 1} }
+  ]
+}

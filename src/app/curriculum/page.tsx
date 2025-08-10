@@ -1,24 +1,28 @@
 import Link from "next/link";
-import { topicsList } from "@/content/topics";
+import { loadAllAdts } from "@/content/registry";
+
+export const dynamic = "error"; // ensure static on export
 
 export default function CurriculumPage() {
+  const adts = loadAllAdts();
+
   return (
     <div>
-      <h1 className="text-3xl font-bold tracking-tight mb-6">Data Structures & Algorithms</h1>
+      <h1 className="text-3xl font-bold tracking-tight mb-6">Curriculum</h1>
       <p className="text-foreground/80 mb-6 max-w-2xl">
-        The curriculum overview is public. You will need to sign in to open a topic and launch the notebook exercises.
+        Start by implementing core Abstract Data Types (ADTs). Each topic includes brief discussions, hands-on case studies, and links to related algorithmic techniques.
       </p>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
-        {topicsList.map((t) => (
+        {adts.map((adt) => (
           <Link
-            key={t.slug}
-            href={`/topics/${t.slug}`}
+            key={adt.slug}
+            href={`/curriculum/adts/${adt.slug}`}
             className="rounded-xl border border-black/10 dark:border-white/10 p-5 hover:bg-black/5 dark:hover:bg-white/5 transition"
           >
-            <h3 className="font-semibold mb-1">{t.title}</h3>
-            <p className="text-sm text-foreground/70">{t.summary}</p>
+            <h3 className="font-semibold mb-1">{adt.title}</h3>
+            <p className="text-sm text-foreground/70">{adt.overview}</p>
             <div className="mt-3 inline-flex items-center text-xs px-2 py-1 rounded-md border border-black/10 dark:border-white/10">
-              View topic
+              View ADT
             </div>
           </Link>
         ))}
