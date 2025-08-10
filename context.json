@@ -1,0 +1,64 @@
+{
+  "name": "CodingExercises.Online",
+  "purpose": "Static learning platform to practice data structures and algorithms via JupyterLite notebooks running entirely in the browser.",
+  "audience": "People with programming experience and little math background learning DSA outside university.",
+  "tech": {
+    "framework": "Next.js (App Router)",
+    "language": "TypeScript + React",
+    "styling": "Tailwind CSS v4 (via @tailwindcss/postcss)",
+    "hosting": "Static export (next export)",
+    "notebooks": "JupyterLite embedded via iframe",
+    "auth": "Stubbed client-only auth (localStorage); can be replaced with Firebase later"
+  },
+  "routes": {
+    "/": "Marketing home page describing platform and value",
+    "/curriculum": "Public overview list of DSA topics",
+    "/topics/[slug]": "Topic detail page; requires login; embeds JupyterLite notebook with language switcher",
+    "/login": "Sign-in form; stubbed auth; redirects back"
+  },
+  "auth": {
+    "provider": "Stub",
+    "persistence": "localStorage (key: ceo_user)",
+    "components": ["AuthProvider", "useAuth", "RequireAuth"],
+    "future": "Swap with Firebase Auth SDK; keep context API surface"
+  },
+  "jupyterlite": {
+    "baseUrlEnv": "NEXT_PUBLIC_JUPYTERLITE_BASE_URL",
+    "defaultBaseUrl": "/jupyterlite",
+    "embed": "src/components/JupyterLiteEmbed.tsx uses iframe with ?path=<notebook>&lang=<language>",
+    "languages": ["c", "python", "typescript", "dart"],
+    "switcher": "src/components/LanguageTabs.tsx"
+  },
+  "topics": [
+    "arrays-and-strings",
+    "linked-lists",
+    "stacks-and-queues",
+    "trees-and-bsts",
+    "heaps-and-priority-queues",
+    "graphs",
+    "sorting-and-searching",
+    "dynamic-programming",
+    "greedy"
+  ],
+  "files": {
+    "layout": "src/app/layout.tsx",
+    "home": "src/app/page.tsx",
+    "curriculum": "src/app/curriculum/page.tsx",
+    "topic": "src/app/topics/[slug]/page.tsx",
+    "login": "src/app/login/page.tsx",
+    "authLib": "src/lib/auth.tsx",
+    "navbar": "src/components/Navbar.tsx",
+    "footer": "src/components/Footer.tsx",
+    "languageTabs": "src/components/LanguageTabs.tsx",
+    "jupyterEmbed": "src/components/JupyterLiteEmbed.tsx",
+    "siteConfig": "src/config/site.ts",
+    "styles": "src/app/globals.css",
+    "nextConfig": "next.config.ts"
+  },
+  "architecture": {
+    "app": "App Router wraps pages with AuthProvider and site chrome (Navbar/Footer)",
+    "protection": "Topic pages are wrapped with RequireAuth for login gating",
+    "static": "Configured output: export; images unoptimized for static hosting",
+    "config": "JupyterLite base URL configurable via env"
+  }
+}
