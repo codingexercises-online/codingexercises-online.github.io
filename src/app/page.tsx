@@ -42,6 +42,12 @@ export default function Home() {
           Browse curriculum
         </Link>
         <Link
+          href="/foundations"
+          className="rounded-md px-4 py-2 border border-black/10 dark:border-white/15 hover:bg-black/5 dark:hover:bg-white/10"
+        >
+          Read foundations
+        </Link>
+        <Link
           href="/login"
           className="rounded-md px-4 py-2 border border-black/10 dark:border-white/15 hover:bg-black/5 dark:hover:bg-white/10"
         >

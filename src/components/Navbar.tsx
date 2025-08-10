@@ -13,6 +13,9 @@ export function Navbar() {
             CodingExercises.Online
           </Link>
           <nav className="hidden md:flex items-center gap-4 text-sm">
+            <Link href="/foundations" className="hover:underline">
+              Foundations
+            </Link>
             <Link href="/curriculum" className="hover:underline">
               Curriculum
             </Link>

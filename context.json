@@ -12,6 +12,9 @@
   },
   "routes": {
     "/": "Marketing home page describing platform and value",
+    "/foundations": "Public foundations overview page",
+    "/foundations/data-structures": "Public article: storage models (indexes/pointers) + ADTs",
+    "/foundations/algorithmic-techniques": "Public article: fundamental ops, precomputation, iterative refinement",
     "/curriculum": "Public overview list of DSA topics",
     "/topics/[slug]": "Topic detail page; requires login; embeds JupyterLite notebook with language switcher",
     "/login": "Sign-in form; stubbed auth; redirects back"
