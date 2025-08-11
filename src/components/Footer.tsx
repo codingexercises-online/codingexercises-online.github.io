@@ -7,8 +7,8 @@ export function Footer() {
           <a href="https://nextjs.org" target="_blank" rel="noreferrer" className="hover:underline">
             Built with Next.js
           </a>
-          <a href="https://jupyterlite.readthedocs.io" target="_blank" rel="noreferrer" className="hover:underline">
-            JupyterLite
+          <a href="https://codemirror.net" target="_blank" rel="noreferrer" className="hover:underline">
+            CodeMirror
           </a>
         </div>
       </div>

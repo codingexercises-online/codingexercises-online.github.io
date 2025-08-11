@@ -2,14 +2,19 @@
 import { useState } from "react";
 import { RequireAuth } from "@/lib/auth";
 import { Language, LanguageTabs } from "@/components/LanguageTabs";
-import { JupyterLiteEmbed } from "@/components/JupyterLiteEmbed";
-import { siteConfig } from "@/config/site";
+import { CodeEditor } from "@/components/CodeEditor";
+import type { Dialect } from "@/lib/compilerStub";
 import { topicMeta } from "@/content/topics";
 
 export default function TopicClient({ slug }: { slug: string }) {
   const meta = topicMeta[slug];
   const [lang, setLang] = useState<Language>("c");
-  const notebookPath = meta.notebooks[lang];
+  const dialectByLang: Record<Language, Dialect> = {
+    c: "llCSharp",
+    python: "llPython",
+    typescript: "llTypescript",
+    dart: "llDart",
+  };
 
   return (
     <RequireAuth>
@@ -21,11 +26,7 @@ export default function TopicClient({ slug }: { slug: string }) {
           </div>
           <LanguageTabs initial={lang} onChange={(l) => setLang(l)} />
         </div>
-        <JupyterLiteEmbed
-          baseUrl={siteConfig.jupyterLiteBaseUrl}
-          notebookPath={notebookPath}
-          language={lang}
-        />
+        <CodeEditor initialCode={""} dialect={dialectByLang[lang]} />
       </div>
     </RequireAuth>
   );

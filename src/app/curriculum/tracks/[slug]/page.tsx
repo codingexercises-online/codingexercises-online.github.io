@@ -38,7 +38,7 @@ export default async function TrackPage({ params }: { params: Promise<{ slug: st
                 Study the ADT, complete exercises, then launch the notebook for hands-on practice.
               </div>
               <div>
-                <Link href={`/curriculum/adts/${a}#notebook`} className="text-xs rounded-md px-2 py-1 border border-black/10 dark:border-white/15 hover:bg-black/5 dark:hover:bg-white/10">Go to notebook</Link>
+                <Link href={`/curriculum/adts/${a}#notebook`} className="text-xs rounded-md px-2 py-1 border border-black/10 dark:border-white/15 hover:bg-black/5 dark:hover:bg-white/10">Open editor</Link>
               </div>
             </li>
           ))}

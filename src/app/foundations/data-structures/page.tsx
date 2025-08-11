@@ -185,7 +185,7 @@ export default function DataStructuresPage() {
       </ul>
 
       <h2>Useful Data Structures</h2>
-      <h3>1. Linear Data Structures</h3>
+      <h3>1. Linear ADTs</h3>
       <p>
         <strong>Static and Dynamic Arrays</strong>: index-based with random access; dynamic arrays resize via copy.
       </p>
@@ -202,18 +202,18 @@ export default function DataStructuresPage() {
         probabilistic membership with false positives.
       </p>
 
-      <h3>3. Tree-Based ADTs</h3>
+      <h3>3. Non-Linear ADTs — Trees</h3>
       <p>
         <strong>Trees, Binary Trees, BSTs</strong>; self-balancing variants (AVL, Red-Black, Splay); B-Trees for disk; tries/ternary
         trees for strings; quadtrees/octrees/k-d trees for spatial data; treaps and R-trees.
       </p>
 
-      <h3>4. Heap-Based ADTs</h3>
+      <h3>4. Non-Linear ADTs — Heaps</h3>
       <p>
         <strong>Heaps</strong>: array-backed binary trees satisfying heap property; <strong>Fibonacci heaps</strong> for advanced operations.
       </p>
 
-      <h3>5. Graph-Based ADTs</h3>
+      <h3>5. Non-Linear ADTs — Graphs</h3>
       <p>
         Graphs (directed/undirected, weighted, acyclic, bipartite) and Disjoint Set Union (DSU).
       </p>

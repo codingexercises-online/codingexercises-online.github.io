@@ -19,12 +19,12 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "CodingExercises.Online — Learn DSA by Doing",
   description:
-    "A modern, browser-based platform for learning data structures and algorithms through hands-on JupyterLite exercises in C, Python, TypeScript, and Dart.",
+    "A modern, browser-based platform for learning data structures and algorithms through an in-browser code editor and low-level dialects.",
   metadataBase: new URL("https://codingexercises.online"),
   openGraph: {
     title: "CodingExercises.Online",
     description:
-      "Practice DSA hands-on in your browser. Core language: C. Also available in Python, TypeScript, and Dart.",
+      "Practice DSA hands-on in your browser using low-level dialects.",
     url: "https://codingexercises.online",
     siteName: "CodingExercises.Online",
   },
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "CodingExercises.Online",
     description:
-      "Practice DSA hands-on in your browser. Core language: C. Also available in Python, TypeScript, and Dart.",
+      "Practice DSA hands-on in your browser using low-level dialects.",
   },
 };
 

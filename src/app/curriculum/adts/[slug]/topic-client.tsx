@@ -3,14 +3,19 @@ import { useState } from "react";
 import { RequireAuth } from "@/lib/auth";
 import type { AdtEntry } from "@/content/registry";
 import { Language, LanguageTabs } from "@/components/LanguageTabs";
-import { JupyterLiteEmbed } from "@/components/JupyterLiteEmbed";
-import { siteConfig } from "@/config/site";
+import { CodeEditor } from "@/components/CodeEditor";
+import type { Dialect } from "@/lib/compilerStub";
 import Link from "next/link";
 import { Badge } from "@/components/Badge";
 
 export default function TopicClient({ adt }: { adt: AdtEntry }) {
   const [lang, setLang] = useState<Language>("c");
-  const notebookPath = adt.languages[lang] || "";
+  const dialectByLang: Record<Language, Dialect> = {
+    c: "llCSharp", // temporary mapping for demo; will expand to proper C-like dialect later
+    python: "llPython",
+    typescript: "llTypescript",
+    dart: "llDart",
+  };
 
   return (
     <RequireAuth>
@@ -24,15 +29,10 @@ export default function TopicClient({ adt }: { adt: AdtEntry }) {
         </div>
 
         <div id="notebook" />
-        {notebookPath ? (
-          <JupyterLiteEmbed
-            baseUrl={siteConfig.jupyterLiteBaseUrl}
-            notebookPath={notebookPath}
-            language={lang}
-          />
-        ) : (
-          <div className="text-sm text-foreground/60">Notebook coming soon. This will launch the JupyterLite exercise in-browser.</div>
-        )}
+        <CodeEditor
+          initialCode={""}
+          dialect={dialectByLang[lang]}
+        />
 
         <section>
           <h2 className="text-lg font-semibold mb-2">Exercises</h2>

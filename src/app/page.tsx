@@ -8,8 +8,8 @@ export default function Home() {
           Learn Data Structures & Algorithms by Doing
         </h1>
         <p className="text-lg text-foreground/80">
-          A modern, browser‑based platform for practicing DSA with hands‑on
-          JupyterLite notebooks. No server, no installs.
+          A modern, browser‑based platform for practicing DSA with an in‑browser
+          code editor and custom low‑level dialects. No server, no installs.
         </p>
       </section>
 
@@ -23,7 +23,7 @@ export default function Home() {
         <div className="rounded-xl border border-black/10 dark:border-white/10 p-5">
           <h3 className="font-semibold mb-1">Run fully in your browser</h3>
           <p className="text-sm text-foreground/70">
-            Exercises execute locally via JupyterLite. Core language: C. Also Python, TypeScript, Dart.
+            Exercises execute locally in a custom editor compiled to WebAssembly. Dialects: llPython, llTypeScript, and more.
           </p>
         </div>
         <div className="rounded-xl border border-black/10 dark:border-white/10 p-5">

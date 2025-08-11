@@ -1,13 +1,14 @@
 {
   "name": "CodingExercises.Online",
-  "purpose": "Static learning platform to practice data structures and algorithms via JupyterLite notebooks running entirely in the browser.",
+  "purpose": "Static learning platform to practice data structures and algorithms with a built-in CodeMirror editor and in-browser compiler for custom low-level dialects.",
   "audience": "People with programming experience and little math background learning DSA outside university.",
   "tech": {
     "framework": "Next.js (App Router)",
     "language": "TypeScript + React",
     "styling": "Tailwind CSS v4 (via @tailwindcss/postcss)",
     "hosting": "Static export (next export)",
-    "notebooks": "JupyterLite embedded via iframe",
+    "editor": "Custom editor built on CodeMirror (to be wired in fully)",
+    "compiler": "In-browser WebAssembly compiler for low-level dialects (stubbed in src/lib/compilerStub.ts)",
     "auth": "Stubbed client-only auth (localStorage); can be replaced with Firebase later"
   },
   "routes": {
@@ -17,14 +18,15 @@
     "/foundations/algorithmic-techniques": "Public article: fundamental ops, precomputation, iterative refinement",
     "/curriculum": "Tracks-focused overview (specializations only)",
     "/curriculum/adts": "List of ADTs from CMS",
-    "/curriculum/adts/[slug]": "ADT detail page with overview, exercises (difficulty badges), related links, and login-gated notebook embed",
+    "/curriculum/adts/[slug]": "ADT detail page with overview, exercises (difficulty badges), related links, and integrated code editor running low-level dialects",
     "/curriculum/techniques": "List of techniques & algorithms from CMS with intro about optimizing navigation/querying/computation",
     "/curriculum/techniques/[slug]": "Technique/algorithm detail with overview, exercises (difficulty badges), related links",
-    "/curriculum/cases/[slug]": "Case study detail page with JupyterLite embed and related references",
+    "/curriculum/cases/[slug]": "Case study detail page with integrated code editor and related references",
     "/curriculum/tracks": "List of specialization tracks",
     "/curriculum/tracks/[slug]": "Track detail page mapping to ADTs, techniques, and case studies",
     "/topics/[slug]": "Legacy topic route (kept for now)",
-    "/login": "Sign-in form; stubbed auth; redirects back"
+    "/login": "Sign-in form; stubbed auth; redirects back",
+    "/dialects": "Overview of all low-level dialects used by the editor"
   },
   "auth": {
     "provider": "Stub",
@@ -64,16 +66,17 @@
     "navbar": "src/components/Navbar.tsx",
     "footer": "src/components/Footer.tsx",
     "languageTabs": "src/components/LanguageTabs.tsx",
-    "jupyterEmbed": "src/components/JupyterLiteEmbed.tsx",
+    "codeEditor": "src/components/CodeEditor.tsx",
+    "compilerStub": "src/lib/compilerStub.ts",
     "siteConfig": "src/config/site.ts",
     "styles": "src/app/globals.css",
     "nextConfig": "next.config.ts"
   },
   "architecture": {
     "app": "App Router wraps pages with AuthProvider and site chrome (Navbar/Footer)",
-    "protection": "ADT pages and prior topic pages are wrapped with RequireAuth for notebook embedding",
+    "protection": "ADT pages and prior topic pages are wrapped with RequireAuth for editor access",
     "static": "Configured output: export; images unoptimized for static hosting",
-    "config": "JupyterLite base URL configurable via env",
+    "config": "Editor uses in-browser compiler stub; future WASM compiler plugged via separate repo",
     "cms": "File-based JSON CMS under src/content/cms for ADTs, Techniques, and Tracks with related links and exercises; registry.ts and tracks.ts load at build-time. ADTs grouped on index page with badges. Techniques index explains optimization of navigation/querying/computation."
   },
   "process": {

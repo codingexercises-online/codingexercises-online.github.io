@@ -9,7 +9,7 @@ export default function CurriculumPage() {
   return (
     <div>
       <h1 className="text-3xl font-bold tracking-tight mb-6">Curriculum</h1>
-      <p className="text-foreground/80 mb-6 max-w-2xl">Pick a specialization track. Each track curates ADTs, techniques, and case studies with exercises and notebook links.</p>
+      <p className="text-foreground/80 mb-6 max-w-2xl">Pick a specialization track. Each track curates ADTs, techniques, and case studies with exercises and editor links.</p>
 
       <h2 className="text-2xl font-semibold tracking-tight mb-3">Tracks</h2>
       <p className="text-foreground/80 mb-4 max-w-2xl">Pick a specialization to get a curated path across ADTs, techniques, and case studies.</p>

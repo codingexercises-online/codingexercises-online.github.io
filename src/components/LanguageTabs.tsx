@@ -12,7 +12,7 @@ export function LanguageTabs({
 }) {
   const [active, setActive] = useState<Language>(initial);
   const langs: { key: Language; label: string }[] = [
-    { key: "c", label: "C (core)" },
+    { key: "c", label: "C-like (llC)" },
     { key: "python", label: "Python" },
     { key: "typescript", label: "TypeScript" },
     { key: "dart", label: "Dart" },

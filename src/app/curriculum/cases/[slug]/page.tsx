@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { RequireAuth } from "@/lib/auth";
-import { JupyterLiteEmbed } from "@/components/JupyterLiteEmbed";
-import { siteConfig } from "@/config/site";
+import { CodeEditor } from "@/components/CodeEditor";
+import type { Dialect } from "@/lib/compilerStub";
 
 export function generateStaticParams() {
   // Placeholder: in future, enumerate from CMS
@@ -17,7 +17,7 @@ export function generateStaticParams() {
 
 export default async function CaseStudyPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
-  const notebookPath = `cases/${slug}.ipynb`;
+  const dialect: Dialect = "llTypescript";
 
   return (
     <RequireAuth>
@@ -30,7 +30,7 @@ export default async function CaseStudyPage({ params }: { params: Promise<{ slug
           Related: <Link className="underline" href="/curriculum/adts/static_arrays">static arrays</Link>, <Link className="underline" href="/curriculum/techniques/two_pointer">two-pointer</Link>, <Link className="underline" href="/curriculum/techniques/sliding_window">sliding window</Link>
         </div>
         <div id="notebook" />
-        <JupyterLiteEmbed baseUrl={siteConfig.jupyterLiteBaseUrl} notebookPath={notebookPath} language="c" />
+        <CodeEditor initialCode={"// Implement the case study solution here"} dialect={dialect} />
       </div>
     </RequireAuth>
   );
