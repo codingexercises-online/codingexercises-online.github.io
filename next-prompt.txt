@@ -1,0 +1,7 @@
+ awesome. now for the fundamental concepts in the algorithmic techniques page, I want you to       │
+ │   actually make those look good, not just bullet points. Each one of them should point to a page in │
+ │    the foundations section of our site that properly expands on that details. At the bottom of all  │
+ │   of those pages should also be examples of how these fundamentals apply to core ADTs, as well as   │
+ │   links to case studies that use those concepts. And also, flesh out the foundations pages as well. │
+ │    Don't just make Algorithmic Techniques lead to a single page for example. Split the course       │
+ │   content and expand on it in detail given our philosophy and the tone of my writing    

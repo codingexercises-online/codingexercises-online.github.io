@@ -13,9 +13,8 @@ const groups: Group[] = [
   { name: "Linear — Node-based", match: (s) => /(linked_list|stack|queue|deque|skip_list)/.test(s), tone: "info" },
 
   // Non-linear — Trees
-  { name: "Trees — Fundamentals", match: (s) => /(binary_tree|bst|tree|trie|ternary)/.test(s), tone: "info" },
-  { name: "Trees — Balanced & External", match: (s) => /(avl|red_black|splay|b_tree)/.test(s), tone: "warn" },
-  { name: "Trees — Specialized", match: (s) => /(suffix|kd|quad|oct|r_tree|finger|persistent)/.test(s), tone: "danger" },
+  { name: "Trees — Fundamentals", match: (s) => /(binary_tree|binary_search_tree|bst|tree|trie|ternary)/.test(s), tone: "info" },
+  { name: "Self-Balancing Trees & External", match: (s) => /(avl|red[_-]?black|splay|b[_-]?tree)/.test(s), tone: "warn" },
 
   // Non-linear — Heaps
   { name: "Heaps & Priority", match: (s) => /(heap|fibonacci)/.test(s), tone: "warn" },
@@ -25,6 +24,9 @@ const groups: Group[] = [
 
   // Hash-based
   { name: "Hashing & Probabilistic", match: (s) => /(hash|hashtable|bloom)/.test(s), tone: "success" },
+
+  // Specialized (catch-all)
+  { name: "Specialized Structures", match: (s) => /(suffix|kd|quad|oct|r_tree|finger|persistent|fenwick|segment|treap|van[_-]?emde[_-]?boas|fusion)/.test(s), tone: "danger" },
 ];
 
 function groupFor(slug: string, title: string): Group | undefined {
