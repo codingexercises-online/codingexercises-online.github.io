@@ -2,12 +2,12 @@ import Link from "next/link";
 
 export default function FoundationsIndexPage() {
   return (
-    <div className="max-w-3xl">
+    <div className="w-full">
       <h1 className="text-3xl font-bold tracking-tight mb-4">Foundations</h1>
       <p className="text-foreground/80 mb-8">
         The principles behind our approach to teaching Data Structures and Algorithms. Start here to internalize the storage models, abstract data types, and mental models we reference throughout exercises.
       </p>
-      <div className="grid gap-4">
+      <div className="grid md:grid-cols-2 gap-4">
         <Link
           href="/foundations/data-structures"
           className="block rounded-xl border border-black/10 dark:border-white/10 p-5 hover:bg-black/5 dark:hover:bg-white/5 transition"
