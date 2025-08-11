@@ -19,7 +19,12 @@ export default function DialectsPage() {
   return (
     <div className="space-y-6">
       <h1 className="text-3xl font-bold tracking-tight">Low-Level Dialects</h1>
-      <p className="text-foreground/80 max-w-3xl">These dialects are self-contained and compiled in-browser via a WebAssembly-backed compiler (stubbed for now). Use the editor on any ADT page to write code in your chosen dialect.</p>
+      <p className="text-foreground/80 max-w-3xl">
+      We've created these dialects to make the transition to learning about data structures and algorithms easier on you as a developer.
+      Modern languages have many advantages, but they abstract some low-level concepts (particularly around pointers) that are essential for a thorough intuitive understanding of data structures and algorithms.
+      These dialects are minified, strictly typed, low-level versions of popular languages that focus on the core concepts of data structures and algorithms.
+      They compile to web-assembly and run directly in your own browser.
+      </p>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
         {DIALECTS.map((d) => (
           <div key={d.key} className="rounded-xl border border-black/10 dark:border-white/10 p-5">
