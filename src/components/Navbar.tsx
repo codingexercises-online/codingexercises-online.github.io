@@ -21,9 +21,9 @@ export function Navbar() {
             <Link href="/curriculum" className="hover:underline">
               Curriculum
             </Link>
-            <Link href="/curriculum/adts" className="hover:underline">ADTs</Link>
+            <Link href="/curriculum/adts" className="hover:underline">Abstract Data Types</Link>
             <Link href="/curriculum/techniques" className="hover:underline">Techniques & Algorithms</Link>
-            <Link href="/dialects" className="hover:underline">Dialects</Link>
+            <Link href="/dialects" className="hover:underline">Low-Level Dialects</Link>
           </nav>
         </div>
         <div className="flex items-center gap-3">
