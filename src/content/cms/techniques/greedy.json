@@ -1,0 +1,12 @@
+{
+  "slug": "greedy",
+  "title": "Greedy Algorithms",
+  "overview": "Heuristic computation picking locally optimal choices aiming for global optimum.",
+  "relatedAdts": ["heaps", "graphs"],
+  "relatedTechniques": ["precomputation", "divide_and_conquer"],
+  "exercises": [
+    { "title": "Activity selection (interval scheduling)", "uses": {"adts": 1, "techniques": 2, "caseStudies": 1} },
+    { "title": "Huffman coding construction", "uses": {"adts": 2, "techniques": 2, "caseStudies": 2} },
+    { "title": "Dijkstra’s shortest path (greedy on frontier)", "uses": {"adts": 2, "techniques": 2, "caseStudies": 2} }
+  ]
+}

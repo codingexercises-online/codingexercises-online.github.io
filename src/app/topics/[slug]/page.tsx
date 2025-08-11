@@ -5,8 +5,8 @@ export function generateStaticParams() {
   return topicsList.map((t) => ({ slug: t.slug }));
 }
 
-export default function TopicPage({ params }: any) {
-  const slug = params.slug;
+export default async function TopicPage({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
   const meta = topicMeta[slug];
 
   if (!meta) {

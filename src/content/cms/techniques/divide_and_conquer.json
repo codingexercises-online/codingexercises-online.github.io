@@ -1,0 +1,11 @@
+{
+  "slug": "divide_and_conquer",
+  "title": "Divide and Conquer",
+  "overview": "Split problems into subproblems, solve, and combine (often via recursion).",
+  "relatedAdts": ["static_arrays", "trees"],
+  "relatedTechniques": ["recursion", "precomputation"],
+  "exercises": [
+    { "title": "Merge sort implementation", "uses": {"adts": 1, "techniques": 2, "caseStudies": 1} },
+    { "title": "Quick sort (partitioning)", "uses": {"adts": 1, "techniques": 2, "caseStudies": 1} }
+  ]
+}
